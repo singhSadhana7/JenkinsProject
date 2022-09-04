@@ -10,4 +10,6 @@ public interface JenkinsService {
 
 	ResponseEntity<?> getAllJenkinsInformation();
 
+	ResponseEntity<?> getJenkinsInformation(Long id);
+
 }

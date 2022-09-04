@@ -27,6 +27,12 @@ public class JenkinsServiceImpl implements JenkinsService {
 		// TODO Auto-generated method stub
 		return ResponseEntity.ok( jenkinsInformationRepository.findAll());
 	}
+
+	@Override
+	public ResponseEntity<?> getJenkinsInformation(Long id) {
+		// TODO Auto-generated method stub
+		return ResponseEntity.ok(jenkinsInformationRepository.findById(id));
+	}
 	
 
 }
